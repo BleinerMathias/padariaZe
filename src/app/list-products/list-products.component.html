@@ -1,0 +1,5 @@
+<div *ngFor="let p of list">
+    <strong>{{p.name}}</strong>
+    <p>{{p.price | currency : "BRL" }}</p>
+    <p>{{p.description}}</p>
+</div>

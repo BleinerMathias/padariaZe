@@ -1,0 +1,17 @@
+<article>
+    <h1>{{produto.name | uppercase}}</h1>
+    <p>Preço: {{produto.price | currency : "BRL" }}</p>
+    <p>Descrição: {{produto.description}}</p>
+
+    <hr>
+
+    <div class="">
+        <p>Digite o nome do produto</p>
+        <input type="text" [(ngModel)]="produto.name" placeholder="Nome do produto">
+        <p>Digite o preço do produto</p>
+        <input type="text" [(ngModel)]="produto.description" placeholder="Descrição">
+        <p>Digite a descrição do produto</p>
+        <input type="number" [(ngModel)]="produto.price" placeholder="Preço">
+    </div>
+
+</article>
